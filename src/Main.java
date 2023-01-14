@@ -1,55 +1,18 @@
 public class Main {
+
+
+
     public static void main(String[] args) {
-        task1();
-        //task2();
-        //task3();
-        //task4();
-        //task5();
-        //task6();
-        //task7();
-        // task8();
-    }
 
+        Author victorPelevin = new Author("Виктор", "Пелевин");
+        Book transhumanism = new Book("Трансгуманизм", victorPelevin, 2021);
+        System.out.println(transhumanism.getTitle() + " " + transhumanism.getYear() + " " + transhumanism.getAuthor().getName() + " " + transhumanism.getAuthor().getSurname());
 
-    public static void task1() {
-        System.out.println("Задача 1");
+        Author ivanEfremov = new Author("Иван", "Ефремов");
+        Book hourOfTheBull = new Book("Час быка", ivanEfremov ,1970);
 
-    }
-
-    public static void task2() {
-        System.out.println("Задача 2");
-
-
-    }
-
-    public static void task3() {
-        System.out.println("Задача 3");
-
-    }
-
-    public static void task4() {
-        System.out.println("Задача 4");
-
-    }
-
-    public static void task5() {
-        System.out.println("Задача 5");
-
-    }
-
-    public static void task6() {
-        System.out.println("Задача 6");
-
-    }
-
-    public static void task7() {
-        System.out.println("Задача 7");
-
-
-    }
-
-    public static void task8() {
-        System.out.println("Задача 8");
+        hourOfTheBull.setYear(1971);
+        System.out.println(hourOfTheBull.getTitle() + " " + hourOfTheBull.getYear() + " " + hourOfTheBull.getAuthor().getName() + " " + hourOfTheBull.getAuthor().getSurname());
 
     }
 }
